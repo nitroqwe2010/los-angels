@@ -1,0 +1,186 @@
+/* Universal styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header stayle */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .container div a {
+    background-color: #FC004A;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+header ul a {
+    color: black;
+}
+
+header ul a:hover {
+    color: #FC004A;
+    transform: scale(1.1);
+    display: block;
+}
+
+header .hamburger-menu {
+    display: none;
+}
+
+/* Intro styles */
+.intro {
+    margin-top: 50px;
+}
+
+.intro img {
+    width: 100%;
+}
+
+/* menu stayle */
+.menu {
+    margin-top: 100px;
+}
+
+.menu h2 {
+    font-size: 42px;
+}
+
+.menu h3 {
+    margin-left: 20px;
+}
+
+.menu p {
+    color: #FC004A;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.menu .sets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu .set {
+    width: 23%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 10px #E5E5E5;
+    border-radius: 10px;
+}
+
+.menu button {
+    border: none;
+    background-color: #FC004A;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.menu button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+    margin: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* Header */
+    header img {
+        display: none;
+    }
+
+    /* Menu */
+    .menu .set {
+        width: 32%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Header */
+    header .logo,
+    header ul {
+        display: none;
+    }
+
+    header .hamburger-menu {
+        display: block;
+    }
+
+    
+    /* Menu */
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu .set {
+        width: 48%;
+    }
+
+    .menu .set img {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        margin-bottom: 19px;
+    }
+
+    footer .container {
+        flex-direction: column-reverse;
+    }
+}
